@@ -13,9 +13,9 @@ Nous avons choisis de prédire le cours d'Ethereum avec le modèle LSTM qui fait
 
 Nous avons décidé de prendre le prix du BITCOIN comme signal externe en mettant son cours en entrée dans notre modèle LSTM. Nous avons choisi cet indicateur car le cours du BTC est souvent à l'initiative de mouvements de marché.
 
-Nous avons fais varier les hyper paramètres pour avoir une erreur minimale. Nous avons augmenté les trainings à 400 et les neuronnes, les prédictions étaient moins précises et prenaient du temps, ce qui veut dire que nous étions tombés dans le surentrainement. 
+Nous avons fais varier les hyper paramètres pour avoir une erreur minimale. Nous avons augmenté les trainings à 400 et les neuronnes, les prédictions étaient moins précises et prenaient du temps, ce qui veut dire que nous étions tombés dans le surentrainement. C'est à ce moment où nous avons reperé l'overfitting que nous devons ajuster l'hyperparamètre dropout.
 
-Nous avons essayé le modèle GRU qui fait aussi partis des réseaux récurrents. Ce dernier modèle nous a permis de réduire par deux l'erreur absolue de nos prédictions.
+Nous avons essayé le modèle GRU qui fait aussi partis des réseaux récurrents. Ce dernier modèle nous a permis de réduire par deux l'erreur absolue de nos prédictions lorsque nous avions pas ajusté l'overfitting.
 
 
 
