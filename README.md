@@ -9,6 +9,7 @@ C'est intéressant de faire "peser" sur notre modèle un signal qui témoignerai
 
 J'ai rapidement regardé des codes de prédictions de cryptomonnaie que je ne comprenais pas. J'ai alors commencé à regarder certaines ressources pour comprendre chaque étape des modèles de prédiction. Je me suis ensuite initié à tensorflow avec le youtuber Thibaul Neveu ainsi qu'en effectuant le tutoriel de TensorFlow calssification d'images pour savoir comment coder les notions que j'ai apprises.
 
+Nous avons choisis de prédire le cours d'Ethereum avec le modèle LSTM qui fait partis des réseaux récurrents qui peuvent modéliser des séries temporelles. Ainsi notre modèle pour prédire le prix de l'Ethereum ce jours ci va se employer sur le prix de l'ETH des cinq derniers jours.
 
 
 
