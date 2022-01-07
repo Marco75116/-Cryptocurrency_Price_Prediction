@@ -11,6 +11,12 @@ J'ai rapidement regardé des codes de prédictions de cryptomonnaie que je ne co
 
 Nous avons choisis de prédire le cours d'Ethereum avec le modèle LSTM qui fait partis des réseaux récurrents qui peuvent modéliser des séries temporelles. Ainsi notre modèle pour prédire le prix de l'Ethereum ce jours ci va se employer sur le prix de l'ETH des cinq derniers jours.
 
+Nous avons décidé de prendre le prix du BITCOIN comme signal externe en mettant son cours en entrée dans notre modèle LSTM. Nous avons choisi cet indicateur car le cours du BTC est souvent à l'initiative de mouvements de marché.
+
+Nous avons fais varier les hyper paramètres pour avoir une erreur minimale. Nous avons augmenté les trainings à 400 et les neuronnes, les prédictions étaient moins précises et prenaient du temps, ce qui veut dire que nous étions tombés dans le surentrainement. 
+
+Nous avons essayé le modèle GRU qui fait aussi partis des réseaux récurrents. Ce dernier modèle nous a permis de réduire par deux l'erreur absolue de nos prédictions.
+
 
 
 Ressources: https://www.tensorflow.org/tutorials/keras/classification chaines youtube Thibault Neveu, Neuraline ,
